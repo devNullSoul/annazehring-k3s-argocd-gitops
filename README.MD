@@ -1,7 +1,13 @@
 # Inhalt 
 
-Das Repositoriy veranschaulicht die Verwendung des GitOps-Ansatzes
-zur Beschleunigung der Deployment-Prozesse.
+Mit GitOps wissen wir jederzeit exakt, welche Version in Produktion läuft, und können innerhalb weniger Minuten auf eine funktionierende Version zurückgehen.
+Neue Features erreichen den Kunden deutlich schneller und vor allem zuverlässig.
+
+Jede Änderung wird automatisiert gebaut und als eindeutig versionierte Anwendung bereitgestellt.
+Die gewünschte Version wird zentral im System definiert und automatisch in die Zielumgebung ausgerollt.
+
+Dadurch ist jederzeit nachvollziehbar, welche Änderung von wem wann in welcher Umgebung aktiv ist.
+Deployments werden reproduzierbar, sicher und unabhängig von manuellen Eingriffen.
 
 # Vorbereitung
 
@@ -18,4 +24,3 @@ kubectl create namespace argocd
 kubectl apply --server-side --force-conflicts -k https://github.com/argoproj/argo-cd/manifests/crds\?ref\=stable
 kubectl apply --server-side --force-conflicts -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
-# Automatisiertes Applizieren der Änderungen
