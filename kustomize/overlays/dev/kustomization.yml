@@ -8,4 +8,4 @@ commonLabels:
 
 replicas:
   - name: demo-app
-    count: 1
+    count: 2
