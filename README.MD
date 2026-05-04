@@ -16,4 +16,6 @@ Quelle: https://k3d.io/stable/#install-current-latest-release
 
 kubectl create namespace argocd
 kubectl apply --server-side --force-conflicts -k https://github.com/argoproj/argo-cd/manifests/crds\?ref\=stable
+kubectl apply --server-side --force-conflicts -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
+# Automatisiertes Applizieren der Änderungen
